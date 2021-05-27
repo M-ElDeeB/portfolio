@@ -668,6 +668,164 @@ header .contact a i:hover {
 }
 
 /* End Contact-page */
+/* Start Work Section  */
+.works {
+    padding-top: 150px;
+}
+
+.works .up h2 {
+    color: #0D111A;
+    font-size: 4rem;
+    text-shadow: 0 0 2px black;
+    margin: 10px 0;
+    font-weight: 700;
+    text-align: center;
+}
+
+.works .up .line {
+    width: 13%;
+    height: 1px;
+    background: #0D111A;
+    margin: 20px auto;
+    position: relative;
+}
+
+.works .up .line span {
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 1%;
+    background: #FFF;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid #0D111A;
+    animation-name: line;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes line {
+    0% {
+        left: 1%
+    }
+
+    50% {
+        left: 88%
+    }
+
+    100% {
+        left: 1%
+    }
+}
+
+.works .work {
+    margin-top: 100px;
+}
+
+@media(max-width:767px) {
+    .works .work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.works .work .box {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    box-shadow: inset 0px 0 60px 55px #0000004f;
+    padding: 20px;
+}
+
+@media(max-width:767px) {
+    .works .work .box {
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.works .work .box .image {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    width: 90%;
+}
+
+.works .work .box .image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: #0000008f;
+    z-index: 1;
+}
+
+.works .work .box img {
+    width: 90%;
+}
+
+.works .work .box .show {
+    flex: 1;
+}
+
+.works .work .box .show .tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.works .work .box .show .tools i {
+    font-size: 6rem;
+}
+
+@media(max-width:767px) {
+    .works .work .box .show .tools i {
+        font-size: 3rem;
+        margin-right: 20px;
+    }
+}
+
+.works .work .box .show .tools .jq {
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+@media(max-width:767px) {
+    .works .work .box .show .tools .jq {
+        font-size: 3rem;
+    }
+}
+
+.works .work .box .show span {
+    margin-top: 50px;
+    display: block;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+@media(max-width:767px) {
+    .works .work .box .show span {
+        margin-top: 10px;
+        
+    }
+}
+
+.works .work .box .show span a {
+    text-decoration: none;
+    color: #0D111A;
+}
+
+.works .work .box .show span a i {
+    margin-right: 15px;
+}
+
+/* End Work Section  */
 
 /* Start Skills Section */
 .skills {

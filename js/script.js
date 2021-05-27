@@ -73,6 +73,12 @@ $(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 600)
+    });
+
+    $('.explore').on("click", function () {
+        $('html,body').animate({
+            scrollTop: $('header').height()
+        })
     })
 });
 
@@ -81,7 +87,7 @@ $(window).on('load', function () {
             top: '50%',
             opacity: '1'
         }, 1000)
-        .delay(6000).animate({
+        .delay(5000).animate({
             left: '-50%',
             opacity: '0'
         })

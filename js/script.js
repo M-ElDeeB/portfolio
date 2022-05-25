@@ -1,23 +1,4 @@
 $(function () {
-  ////welcome page //////////
-  $("#typewriteText").typewrite({
-    actions: [
-      {
-        delay: 1500,
-      },
-
-      {
-        type: "Weclome To My Portoflio",
-      },
-
-      {
-        select: {
-          from: 23,
-          to: 32,
-        },
-      },
-    ],
-  });
 
   /////////////////////popup contact//////
   //menu toggle
